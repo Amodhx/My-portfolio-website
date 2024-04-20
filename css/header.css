@@ -38,3 +38,75 @@ header>div{
     position: relative;
     top: -11px;
 }
+#burgerbtn{
+    top: 18px;
+    position: absolute;
+    left: 3vw;
+    opacity: 0;
+}
+#burgerbtn>div{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+#burgerbtn>div:first-child{
+    top: 0px;
+    position: relative;
+}
+#burgerbtn>div:nth-child(2){
+    top: 2px;
+    position: relative;
+}
+#burgerbtn>div:nth-child(3){
+    top: 4px;
+    position: relative;
+}
+.rotate1{
+    transform: rotate(45deg);
+    top: 10px !important;
+    transition-duration: 0.5s;
+}
+.rotate3{
+    transform: rotate(-45deg);
+    top: 5px !important;
+    transition-duration: 0.5s;
+}
+@media all and (max-width: 768px){
+
+    header{
+        background-color: #FDFDFD;
+        box-shadow: #FDFDFD 0px 48px 100px 0px;
+    }
+    header > nav {
+        position: absolute;
+        width: fit-content;
+        left: -2%;
+        top: 36px;
+        font-size: 15px;
+        font-family: "Candara Light";
+        line-height: 8px;
+        opacity: 0;
+
+    }
+    header > nav > ul {
+        margin: 0;
+    }
+
+    header > nav > ul > li {
+        display: grid;
+    }
+
+    header > nav > ul > li > a {
+        color: rgba(1, 15, 37, 1);
+        font-weight: bold;
+        margin: 10px;
+        padding-top: 7px;
+        text-decoration: none;
+    }
+    header>div{
+       opacity: 0;
+    }
+    #burgerbtn{
+        opacity: 1;
+    }
+}

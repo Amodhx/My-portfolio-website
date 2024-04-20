@@ -2,131 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Hi! I'm Amodh nanditha weerasinghe.This is my web profile.If you want to know about me, come to my website.">
+    <meta name="Amodh , amodh,Amodh nanditha , Amodh Weersinghe , amodh weerasinghe , Amodh weerasinghe  ,nanditha , weerasinghe , amodhweerasinghe ,amodhnanditha" content="Amodh weerasinghe software engineer fullstack developer programming">
+    <meta name="author" content="Amodh Weerasinghe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
 </head>
 
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/home.css">
 <style>
 
-    .sec {
-        width: 100vw;
-        height: 100vh;
-        background-color: #FDFDFD;
-        position: relative;
-    }
-
-    .homeContent {
-        position: absolute;
-        left: 8vw;
-        font-size: 3rem;
-        color: #002057;
-        font-family: sans-serif;
-        font-weight: bold;
-    }
-
-    #homeSection > h1:first-child {
-        top: 24vh;
-    }
-
-    #homeSection > h1:nth-child(2) {
-        top: 35vh;
-    }
-    #homeSection > h1:nth-child(3){
-        position: absolute;
-        left: 26vw;
-        font-size: 3rem;
-        color: #FF7A00;
-        font-family: sans-serif;
-        font-weight: bold;
-        top: 35vh;
-    }
-    #homeSection > h3{
-        position: absolute;
-        left: 8vw;
-        color: #002057;
-        font-family: sans-serif;
-        font-weight: bold;
-        top: 46vh;
-        font-size: 2vw;
-    }
-    #homeSection > h4{
-        position: absolute;
-        left: 17vw;
-        color: #960000;
-        font-family: sans-serif;
-        font-weight: bolder;
-        top: 45vh;
-        font-size: 29px;
-    }
-    #homeSection>a{
-        position: absolute;
-        top: 59vh;
-        left: 8vw;
-        font-size: 19px;
-        text-decoration: none;
-        border: 1px solid black;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 25px;
-        padding-right: 25px;
-        border-radius: 43px;
-        background-color: #002057;
-        color: white;
-        box-shadow: #013793 0px 8px 24px;
-    }
-    .hoverBtn{
-        margin-right: 5px;
-        transition-duration: 0.3s;
-    }
-    #socials{
-        top: 69vh;
-        position: absolute;
-        left: 5vw;
-    }
-    #socials>ul{
-
-    }
-    #socials>ul>li{
-        display: inline-block;
-        margin-right: 8px;
-    }
-    #socials>ul>li>a{
-        font-size: 2rem;
-        display: inline-block;
-        line-height: 48px;
-        color: #00d9ff;
-        background-color: #09011b;
-        width: 48px;
-        height: 48px;
-        text-align: center;
-        margin-right: 8px;
-        border-radius: 100%;
-        -webkit-transition: all 0.2s linear;
-        -o-transition: all 0.2s linear;
-        transition: all 0.2s linear;
-    }
-    #socials>ul>li>a:active,
-    #socials>ul>li>a:focus,
-    #socials>ul>li>a:hover {
-        color: #fff;
-        background-color: #0685da;
-    }
-    #homeImage{
-        position: absolute;
-        top: 19vh;
-        left: 55vw;
-    }
-    #homeImage>img{
-        border-radius: 100%;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        width: 97%;
-    }
-    #homeImage>img:hover{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        transition-duration: 0.5s;
-    }
 </style>
 <body>
 <!--nav bar-->
@@ -144,16 +32,19 @@
     <div>
         <img src="assets/logo.png" alt="logo.png" title="Logo" width="84px">
     </div>
+    <div id="burgerbtn">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </header>
 
 <!--contenct area-->
 <main>
     <section id="homeSection" class="sec">
         <h1 class="homeContent">Hi There,</h1>
-        <h1 class="homeContent">I`m Amodh</h1>
-        <h1>Nanditha</h1>
-        <h3>I am into </h3>
-        <h4 class="typingText">Web Development</h4>
+        <h1 class="homeContent">I`m Amodh <span>Nanditha</span></h1>
+        <h3>I am into <span>Web Development </span> </h3>
         <a href=""><span>About Me</span>
             <i class="fas fa-arrow-circle-down"></i>
         </a>
@@ -178,6 +69,6 @@
 
 
 <script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/Main.js"></script>
+<script src="js/Home.js"></script>
 </body>
 </html>
