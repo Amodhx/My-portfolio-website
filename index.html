@@ -16,6 +16,67 @@
 <link rel="stylesheet" href="css/blog.css">
 <link rel="stylesheet" href="css/education.css">
 <style>
+    #projectSection>h1{
+        font-family: sans-serif;
+        position: absolute;
+        left: 40vw;
+        top: 9vh;
+        color: #3c3c3c;
+    }
+
+    #resumeSection{
+        height: 30vh;
+    }
+    #resumeSection>div{
+        background-color: black;
+        height: 20vh;
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+        text-align: center;
+    }
+    #resumeSection>div>div{
+        display: inline-block;
+        font-size: 1em;
+        height: 7vh;
+        margin: 0 15px;
+        background: rgba(255, 255, 255, 0.2);
+        position: relative;
+        color: white;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        top: 7vh;
+        width: 16vw;
+    }
+    #resumeSection>div>div>div:first-child{
+        height: 7vh;
+        width: 16vw;
+
+    }
+    #resumeSection>div>div>div:nth-child(2){
+        height: 7vh;
+        width: 16vw;
+        transform: translateY(-111%);
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+    .showText{
+        transform: translateY(-111%) !important;
+        transition-duration: 1s;
+    }
+    .hideIcon{
+        transform: translateY(-73%);
+        transition-duration: 1s;
+    }
+    .hidetext{
+        transform: translateY(0%) !important;
+        transition-duration: 1s;
+    }
+    .showIcon{
+        transform: translateY(14%) !important;
+        transition-duration: 1s;
+    }
 </style>
 <body>
 <!--nav bar-->
@@ -77,6 +138,14 @@
         </div>
 
     </section>
+    <section id="resumeSection" class="sec">
+        <div>
+            <div>
+                <div class="hideIcon"><i class="fa fa-download fa-2x" aria-hidden="true"></i></div>
+                <div class="showText"><h4>DOWNLOAD MY RESUME</h4></div>
+            </div>
+        </div>
+    </section>
     <section id="educationSection" class="sec">
         <div>
             <h1>Prince Of Wales College</h1>
@@ -88,6 +157,13 @@
             <img src="assets/pwc.png" alt="">
             <img src="assets/pwcbagde.png" alt="">
         </div>
+    </section>
+    <section id="projectSection" class="sec">
+        <h1>Some Works</h1>
+        <nav>
+        <div></div>
+        <div></div>
+        </nav>
     </section>
 </main>
 

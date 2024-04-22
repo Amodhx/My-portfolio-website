@@ -119,3 +119,12 @@ $("#educationSection>div:first-child").on('mouseleave',()=>{
     $("#educationSection>div:first-child>input").removeClass("btn");
 })
 
+$("#resumeSection>div>div").on('mouseenter',()=>{
+   $("#resumeSection>div>div>div:first-child").addClass("showIcon") ;
+   $("#resumeSection>div>div>div:nth-child(2)").addClass("hidetext") ;
+});
+$("#resumeSection>div>div").on('mouseleave',()=>{
+    $("#resumeSection>div>div>div:first-child").removeClass("showIcon") ;
+    $("#resumeSection>div>div>div:nth-child(2)").removeClass("hidetext") ;
+});
+
