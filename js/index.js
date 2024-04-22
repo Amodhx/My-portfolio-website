@@ -119,6 +119,7 @@ $("#educationSection>div:first-child").on('mouseleave',()=>{
     $("#educationSection>div:first-child>input").removeClass("btn");
 })
 
+// resume
 $("#resumeSection>div>div").on('mouseenter',()=>{
    $("#resumeSection>div>div>div:first-child").addClass("showIcon") ;
    $("#resumeSection>div>div>div:nth-child(2)").addClass("hidetext") ;
@@ -127,4 +128,17 @@ $("#resumeSection>div>div").on('mouseleave',()=>{
     $("#resumeSection>div>div>div:first-child").removeClass("showIcon") ;
     $("#resumeSection>div>div>div:nth-child(2)").removeClass("hidetext") ;
 });
+
+
+// projects
+$("#projectSection>div>div:first-child").on('mouseenter',()=>{
+    console.log("A")
+    $("#projectSection>div>div:first-child>div").addClass("fadeCir") ;
+});
+
+$("#projectSection>div>div:first-child").on('mouseleave',()=>{
+    console.log("A")
+    $("#projectSection>div>div:first-child>div").removeClass("fadeCir") ;
+});
+
 

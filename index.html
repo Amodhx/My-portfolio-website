@@ -17,12 +17,63 @@
 <link rel="stylesheet" href="css/education.css">
 <link rel="stylesheet" href="css/resume.css">
 <style>
+    #projectSection{
+        /*height: 200vh;*/
+    }
     #projectSection>h1{
         font-family: sans-serif;
         position: absolute;
-        left: 40vw;
+        left: 43%;
         top: 9vh;
         color: #3c3c3c;
+    }
+    #projectSection>div>div:first-child{
+        height: 60%;
+        width: 20vw;
+        position: absolute;
+        border: 7px solid darkgray;
+        border-radius: 18px;
+        top: 27vh;
+        left: 13vw;
+        background: gainsboro;
+        overflow: hidden;
+    }
+    #projectSection>div>div:first-child>div{
+        height: 250%;
+        width: 250%;
+        background: red;
+        border-radius: 100%;
+        top: -10vh;
+        position: absolute;
+
+    }
+    .hideCir{
+        transform: translateX(-101%);
+        transition-duration: 1s;
+    }
+    .fadeCir{
+        transform: translateX(-34%) !important;
+        transition-duration: 1s;
+    }
+    #projectSection>div>div:nth-child(2){
+        height: 60%;
+        width: 20vw;
+        position: absolute;
+        border: 7px solid darkgray;
+        border-radius: 18px;
+        top: 27vh;
+        left: 37vw;
+        background: gainsboro;
+    }
+    #projectSection>div>div:nth-child(3){
+        height: 60%;
+        width: 20vw;
+        position: absolute;
+        border: 7px solid darkgray;
+        border-radius: 18px;
+        top: 27vh;
+        left: 61vw;
+        background: gainsboro;
     }
 
 </style>
@@ -108,10 +159,17 @@
     </section>
     <section id="projectSection" class="sec">
         <h1>Some Works</h1>
-        <nav>
-        <div></div>
-        <div></div>
-        </nav>
+        <div>
+            <div>
+                <div class="hideCir"></div>
+                <h4>2023/07/26</h4>
+                <h1>Student Management</h1>
+                <p>Final project to first sem. </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </section>
 </main>
 

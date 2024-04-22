@@ -62,12 +62,12 @@ header>div{
     position: relative;
 }
 .rotate1{
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     top: 10px !important;
     transition-duration: 0.5s;
 }
 .rotate3{
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
     top: 5px !important;
     transition-duration: 0.5s;
 }
