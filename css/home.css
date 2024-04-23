@@ -149,17 +149,17 @@
     }
     #homeSection > h1:first-child{
         top: 57vh;
-        left: 30vw;
+        left: 27vw;
         font-size: 235%;
     }
     #homeSection > h1:nth-child(2){
         top: 65vh;
-        left: 30vw;
+        left: 27vw;
         font-size: 235%;
     }
     #homeSection > h3{
         top: 73vh;
-        left: 30vw;
+        left: 27vw;
         font-size: 188%;
     }
     #homeSection>a{
@@ -196,8 +196,8 @@
 @media all and (max-width: 564px){
     #homeImage{
         top: 8vh;
-        width: 47%;
-        left: 24%;
+        width: 56%;
+        left: 17%;
     }
     #homeSection > h1:first-child{
         top: 52vh;
@@ -235,9 +235,9 @@
 }
 @media all and (max-width: 376px) {
     #homeImage {
-        top: 8vh;
-        width: 47%;
-        left: 24%;
+        top: 10vh;
+        width: 62%;
+        left: 17%;
     }
 
     #homeSection > h1:first-child {
@@ -267,7 +267,7 @@
 
     #socials {
         left: 76vw;
-        top: 9vh;
+        top: 10vh;
     }
 
     #socials > ul > li > a {
@@ -280,5 +280,42 @@
         line-height: 30px;
         width: 30px;
         height: 30px;
+    }
+}
+
+@media all and (max-width: 321px) {
+    #homeImage{
+        top: 11vh;
+        width: 68%;
+        left: 14%;
+    }
+
+    #socials {
+        left: 73vw;
+        top: 11vh;
+    }
+    #homeSection > h1:first-child {
+        top: 49vh;
+        left: 17vw;
+        font-size: 150%;
+    }
+
+    #homeSection > h1:nth-child(2) {
+        top: 55vh;
+        left: 17vw;
+        font-size: 150%;
+    }
+
+    #homeSection > h3 {
+        top: 61vh;
+        left: 17vw;
+        font-size: 117%;
+    }
+
+    #homeSection > a {
+        top: 70vh;
+        left: 20vw;
+        font-size: 8px;
+        padding: 10px;
     }
 }

@@ -173,24 +173,24 @@
 }
 @media all and (max-width: 376px) {
     #educationSection>div:first-child>h3{
-        top: 55vw;
+        top: 27%;
         width: 54vw;
         left: 11vw;
         font-size: 11px;
     }
     #educationSection>div:first-child>h1{
-        top: 65vw;
+        top: 34%;
         width: 58vw;
         left: 10vw;
         font-size: 117%;
     }
     #educationSection>div:first-child>p{
-        top: 86vw;
+        top: 46%;
         width: 57vw;
         left: 10vw;
     }
     #educationSection>div:first-child>input{
-        top: 157vw;
+        top: 88%;
         left: 10vw;
         z-index: 9999;
     }

@@ -52,6 +52,12 @@ srtop.reveal('#educationSection>div:first-child>input', {delay: 200});
 srtop.reveal('#educationSection>div:nth-child(2)', {delay: 200});
 
 
+srtop.reveal('#projectSection>div>div', {delay: 200});
+
+
+
+
+
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
@@ -130,15 +136,68 @@ $("#resumeSection>div>div").on('mouseleave',()=>{
 });
 
 
+
 // projects
 $("#projectSection>div>div:first-child").on('mouseenter',()=>{
-    console.log("A")
     $("#projectSection>div>div:first-child>div").addClass("fadeCir") ;
+
+    $("#projectSection>div>div:first-child>h4").addClass("textClr");
+    $("#projectSection>div>div:first-child>h1").addClass("textClr");
+    $("#projectSection>div>div:first-child>p").addClass("textClr");
+
+    $("#projectSection>div>div:first-child>img").addClass("imgClr");
 });
 
-$("#projectSection>div>div:first-child").on('mouseleave',()=>{
-    console.log("A")
-    $("#projectSection>div>div:first-child>div").removeClass("fadeCir") ;
+$("#projectSection>div>div:nth-child(2)").on('mouseenter',()=>{
+    $("#projectSection>div>div:nth-child(2)>div").addClass("fadeCir") ;
+
+    $("#projectSection>div>div:nth-child(2)>h4").addClass("textClr");
+    $("#projectSection>div>div:nth-child(2)>h1").addClass("textClr");
+    $("#projectSection>div>div:nth-child(2)>p").addClass("textClr");
+
+    $("#projectSection>div>div:nth-child(2)>img").addClass("imgClr");
 });
+$("#projectSection>div>div:nth-child(3)").on('mouseenter',()=>{
+    $("#projectSection>div>div:nth-child(3)>div").addClass("fadeCir") ;
+
+    $("#projectSection>div>div:nth-child(3)>h4").addClass("textClr");
+    $("#projectSection>div>div:nth-child(3)>h1").addClass("textClr");
+    $("#projectSection>div>div:nth-child(3)>p").addClass("textClr");
+
+    $("#projectSection>div>div:nth-child(3)>img").addClass("imgClr");
+});
+
+$("#projectSection>div>div").on('mouseleave',()=>{
+    $("#projectSection>div>div>div").removeClass("fadeCir") ;
+
+    $("#projectSection>div>div>h4").removeClass("textClr");
+    $("#projectSection>div>div>h1").removeClass("textClr");
+    $("#projectSection>div>div>p").removeClass("textClr");
+
+    $("#projectSection>div>div>img").removeClass("imgClr");
+});
+
+
+$("#projectSection>div>div:first-child>nav").on('mouseenter',()=>{
+    $("#projectSection>div>div:first-child>nav>div:first-child").addClass("showicon");
+    $(" #projectSection>div>div:first-child>nav>div:nth-child(2)").addClass("hideText");
+    $(" #projectSection>div>div:first-child>nav").addClass("clr")
+})
+$("#projectSection>div>div:nth-child(2)>nav").on('mouseenter',()=>{
+    $("#projectSection>div>div:nth-child(2)>nav>div:first-child").addClass("showicon");
+    $(" #projectSection>div>div:nth-child(2)>nav>div:nth-child(2)").addClass("hideText");
+    $(" #projectSection>div>div:nth-child(2)>nav").addClass("clr")
+})
+
+$("#projectSection>div>div:nth-child(3)>nav").on('mouseenter',()=>{
+    $("#projectSection>div>div:nth-child(3)>nav>div:first-child").addClass("showicon");
+    $(" #projectSection>div>div:nth-child(3)>nav>div:nth-child(2)").addClass("hideText");
+    $(" #projectSection>div>div:nth-child(3)>nav").addClass("clr")
+})
+$("#projectSection>div>div>nav").on('mouseleave',()=>{
+    $("#projectSection>div>div>nav>div:first-child").removeClass("showicon");
+    $(" #projectSection>div>div>nav>div:nth-child(2)").removeClass("hideText");
+    $(" #projectSection>div>div>nav").removeClass("clr")
+})
 
 

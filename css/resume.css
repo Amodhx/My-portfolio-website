@@ -55,3 +55,29 @@
     transform: translateY(14%) !important;
     transition-duration: 1s;
 }
+
+@media all and (max-width: 1200px){
+    #resumeSection>div>div>div:nth-child(2)>h4{
+        font-size: 1vw;
+    }
+    .showText{
+        transform: translateY(-94%);
+    }
+}
+@media all and (max-width: 769px){
+    #resumeSection>div>div>div:nth-child(2)>h4{
+        font-size: 9px;
+    }
+    .showText{
+        transform: translateY(-79%);
+    }
+}
+
+@media all and (max-width: 425px){
+    #resumeSection>div>div>div:nth-child(2)>h4{
+        font-size: 9px;
+    }
+    .showText{
+        transform: translateY(-82%) ;
+    }
+}
