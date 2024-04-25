@@ -95,8 +95,9 @@
 }
 @media all and (max-width: 376px){
     #blogSection>div>p{
-        line-height: 28px;
-    }
+        line-height: 22px;
+        font-size: 14px;
+        top: 15vh;    }
     #blogSection>div>img{
         width: 193px;
     }

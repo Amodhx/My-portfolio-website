@@ -16,185 +16,23 @@
 <link rel="stylesheet" href="css/blog.css">
 <link rel="stylesheet" href="css/education.css">
 <link rel="stylesheet" href="css/resume.css">
+<link rel="stylesheet" href="css/projects.css">
 <style>
-    #projectSection{
-        /*height: 200vh;*/
-    }
-    #projectSection>h1{
-        font-family: sans-serif;
-        position: absolute;
-        left: 43%;
-        top: 9vh;
-        color: #3c3c3c;
-    }
-    #projectSection>div>div:first-child{
-        height: 60%;
-        width: 20vw;
-        position: absolute;
-        border: 7px solid darkgray;
-        border-radius: 18px;
-        top: 27vh;
-        left: 13vw;
-        background: gray;
-        overflow: hidden;
-    }
-    #projectSection>div>div:first-child>div{
-        height: 250%;
-        width: 250%;
-        background: white;
-        border-radius: 100%;
-        top: -10vh;
-        position: absolute;
 
-    }
-    #projectSection>div>div:nth-child(2){
-        height: 60%;
-        width: 20vw;
-        position: absolute;
-        border: 7px solid darkgray;
-        border-radius: 18px;
-        top: 27vh;
-        left: 13vw;
-        background: gray;
-        overflow: hidden;
-    }
-    #projectSection>div>div:nth-child(2)>div{
-        height: 250%;
-        width: 250%;
-        background: white;
-        border-radius: 100%;
-        top: -10vh;
-        position: absolute;
-
-    }
-    #projectSection>div>div:nth-child(3){
-        height: 60%;
-        width: 20vw;
-        position: absolute;
-        border: 7px solid darkgray;
-        border-radius: 18px;
-        top: 27vh;
-        left: 13vw;
-        background: gray;
-        overflow: hidden;
-    }
-    #projectSection>div>div:nth-child(3)>div{
-        height: 250%;
-        width: 250%;
-        background: white;
-        border-radius: 100%;
-        top: -10vh;
-        position: absolute;
-
-    }
-    .hideCir{
-        transform: translateX(-101%);
-        transition-duration: 0.5s;
-    }
-    .fadeCir{
-        transform: translateX(-34%) !important;
-        transition-duration: 0.5s;
-    }
-    #projectSection>div>div:nth-child(2){
-        height: 60%;
-        width: 20vw;
-        position: absolute;
-        border: 7px solid darkgray;
-        border-radius: 18px;
-        top: 27vh;
-        left: 37vw;
-        background: gray;
-    }
-    #projectSection>div>div:nth-child(3){
-        height: 60%;
-        width: 20vw;
-        position: absolute;
-        border: 7px solid darkgray;
-        border-radius: 18px;
-        top: 27vh;
-        left: 61vw;
-        background: gray;
-    }
-    #projectSection>div>div>h4{
-        position: absolute;
-        color: white;
-        right: 1vw;
-        top: -1vh;
-        font-family: monospace;
-        transition-duration: 1s;
-    }
-    #projectSection>div>div>h1{
-        position: absolute;
-        top: 27vh;
-        font-size: 27px;
-        left: calc(1vw + 7px);
-        color: white;
-        transition-duration: 1s;
-    }
-    #projectSection>div>div>p{
-        position: absolute;
-        top: 35vh;
-        left: calc(1vw + 8px);
-        width: 86%;
-        color: white;
-        font-family: monospace;
-        line-height: 2.5vh;
-        transition-duration: 1s;
-    }
-    #projectSection>div>div>img{
-        width: 10vw;
-        position: absolute;
-        top: 10vh;
-        left: 5vw;
-        filter: grayscale(100%);
-        transition-duration: 1s;
-    }
-    #projectSection>div>div>nav{
-        border: 1px solid black;
-        overflow: hidden;
-        width: 8vw;
-        height: 4vh;
-        position: absolute;
-        bottom: 2vh;
-        left: 2vw;
-    }
-    #projectSection>div>div>nav>div:first-child{
-        position: absolute;
-        left: 36%;
-        top: 20%;
-        transform: translateX(-464%);
-        transition-duration: 1s;
-    }
-    #projectSection>div>div>nav>div:nth-child(2){
-        position: absolute;
-        font-size: 37%;
-        left: 6%;
-        transform: translateX(33%);
-        transition-duration: 1s;
-    }
-    .hideText{
-        transform: translateX(181%) !important;
-        transition-duration: 1s;
-    }
-    .showicon{
-        transform: translateX(69%) !important;
-        transition-duration: 1s;
-        color: white;
-    }
-
-    .textClr{
-        color: #001940 !important;
-        transition-duration: 1s;
-
-    }
-    .imgClr{
-        filter: grayscale(0%) !important;
-        transition-duration: 1s;
-    }
-    .clr{
-        background: black;
-        transition-duration: 1s;
-    }
+#certificateSection{
+    background: red;
+}
+#certificateSection>div{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
 </style>
 <body>
 <!--nav bar-->
@@ -317,6 +155,9 @@
                 </nav>
             </div>
         </div>
+    </section>
+    <section id="certificateSection" class="sec">
+        <div></div>
     </section>
 </main>
 
