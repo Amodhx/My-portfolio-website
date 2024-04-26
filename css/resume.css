@@ -3,7 +3,7 @@
     height: 30vh;
 }
 #resumeSection>div{
-    background-color: black;
+    background-image: linear-gradient(rgba(1, 15, 37, 1), rgba(0, 25, 64, 1));
     height: 20vh;
     width: 100%;
     position: absolute;
