@@ -197,48 +197,48 @@ $("#projectSection>div>div>nav").on('mouseleave', () => {
 })
 
 
-// certificate description viewer
+// assignment description viewer
 
-$("#certificateSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img").on('click', () => {
+$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img").on('click', () => {
     textAppend(0);
 
 });
 
-$("#certificateSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>img").on('click', () => {
+$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>img").on('click', () => {
     textAppend(1);
 
 });
 
-$("#certificateSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>img").on('click', () => {
+$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>img").on('click', () => {
     textAppend(2);
 
 });
-$("#certificateSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>img").on('click', () => {
+$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>img").on('click', () => {
     textAppend(3);
 
 });
-$("#certificateSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(5)>img").on('click', () => {
+$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(5)>img").on('click', () => {
     textAppend(4);
 
 });
-$("#certificateSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(6)>img").on('click', () => {
+$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(6)>img").on('click', () => {
     textAppend(5);
 
 });
-$("#certificateSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(7)>img").on('click', () => {
+$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(7)>img").on('click', () => {
     textAppend(6);
 
 });
-$("#certificateSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(8)>img").on('click', () => {
+$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(8)>img").on('click', () => {
     textAppend(7);
 });
 
-$("#certificateSection>div:nth-child(2)>div:first-child>nav>img").on('click', () => {
-    $("#certificateSection>div:nth-child(2)>div:first-child").removeClass("showSQ");
+$("#assignmentSection>div:nth-child(2)>div:first-child>nav>img").on('click', () => {
+    $("#assignmentSection>div:nth-child(2)>div:first-child").removeClass("showSQ");
 })
 
 let ar = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0];
 
 function textAppend(index) {
-    $("#certificateSection>div:nth-child(2)>div:first-child").addClass("showSQ");
+    $("#assignmentSection>div:nth-child(2)>div:first-child").addClass("showSQ");
 }
