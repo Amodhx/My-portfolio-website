@@ -64,7 +64,8 @@ let imgs = ["assets/ijse.png", "assets/pmv.png", "assets/pwc.png"];
 let logo = ["assets/ijsebadge.png", "assets/pmvbadge.png", "assets/pwcbagde.png"];
 let dates = ["March 2023", "January 2007 - March 2013", "March 2013 - January 2023"];
 let names = ["Institute Of Software Engineering", "Pothuwila Maha Vidyalaya", "Prince Of Wales College"];
-let para = ["I do my O/L and A/L examinations in this school. I passed my Ol exam in 5 A`s, 2 b`s and 2 C`s. and also i passed my Al exam with # S`s.", "", ""];
+let para = ["In 2021, I started going to IJSE for further education.", "I went to school for the first time at the age of 6 to Pothuwila Navodya School. At the grade of 5, I had to change schools because I passed on scholarship", "\n" +
+"I took my O/L and A/L examinations at this school. I passed my O/L exams with 5 A's, 2 B's, and 2 C's. Additionally, I passed my A/L exams with # S's."];
 var index = 0;
 document.querySelector("#educationSection>div:first-child>input").addEventListener('click', async () => {
     if (index == 0) {
@@ -197,6 +198,18 @@ $("#projectSection>div>div>nav").on('mouseleave', () => {
 })
 
 
+
+// download resume
+$("#resumeBtn").on('click',()=>{
+    const a = document.createElement('a')
+    a.href = "assets/resume/Amodh Nanditha CV.pdf"
+    a.download = "assets/resume/Amodh Nanditha CV.pdf".split('/').pop()
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+});
+
+
 // assignment description viewer
 
 $("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img").on('click', () => {
@@ -242,3 +255,5 @@ let ar = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0];
 function textAppend(index) {
     $("#assignmentSection>div:nth-child(2)>div:first-child").addClass("showSQ");
 }
+
+

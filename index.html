@@ -28,6 +28,55 @@
     background-image: linear-gradient(black,rgba(14, 14, 14, 1));
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+.gallery {
+    --size: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, var(--size));
+    grid-auto-rows: var(--size);
+    margin-bottom: var(--size);
+    place-items: start center;
+    position: absolute;
+    left: 409px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    gap: 5px;
+
+    &:has(:hover) img:not(:hover),
+    &:has(:focus) img:not(:focus){
+        filter: brightness(0.5) contrast(0.5);
+    }
+
+    & img {
+        object-fit: cover;
+        width: calc(var(--size) * 2);
+        height: calc(var(--size) * 2);
+        clip-path: path('M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z');
+        transition: clip-path 0.25s, filter 0.75s;
+        grid-column: auto / span 2;
+        border-radius: 5px;
+
+        &:nth-child(5n - 1) {
+            grid-column: 2 / span 2
+        }
+
+        &:hover,
+        &:focus {
+            clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+            z-index: 1;
+            transition: clip-path 0.25s, filter 0.25s;
+        }
+
+        &:focus {
+            outline: 1px dashed black;
+            outline-offset: -5px;
+        }
+    }
+}
+#gallerySection{
+    height: 70vh;
+}
 
 
 </style>
@@ -66,11 +115,11 @@
 
         <div id="socials">
             <ul>
-                <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/jigar-sable/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a class="github" aria-label="GitHub" href="https://github.com/jigar-sable" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
-                <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/jigarsable.dev"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/amodh-nanditha-15b983278" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a class="github" aria-label="GitHub" href="https://github.com/Amodhx" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/AmodhNanditha" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="telegram" aria-label="Telegram" href="https://t.me/wqaaaaaaaaaaaaaa" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/am_xdh_"><i class="fab fa-instagram" target="_blank"></i></a></li>
             </ul>
         </div>
 
@@ -93,7 +142,7 @@
     </section>
     <section id="resumeSection" class="sec">
         <div>
-            <div>
+            <div id="resumeBtn">
                 <div class="hideIcon"><i class="fa fa-download fa-2x" aria-hidden="true"></i></div>
                 <div class="showText"><h4>DOWNLOAD MY RESUME</h4></div>
             </div>
@@ -170,7 +219,6 @@
             <h3>Quick view</h3>
         </div>
     </section>
-
     <section id="assignmentSection" class="sec">
         <div>
             <h1>Assignments</h1>
@@ -212,7 +260,18 @@
             </div>
         </div>
     </section>
-
+    <section id="gallerySection" class="sec">
+        <article id="gallery" class="gallery">
+            <img src="assets/gallery/8.jpg" alt="guitar player at concert" />
+            <img src="assets/gallery/1.jpg" alt="duo singing" />
+            <img src="assets/gallery/9.jpg" alt="crowd cheering" />
+            <img src="assets/gallery/3.jpg" alt="singer performing" />
+            <img src="assets/gallery/4.jpg" alt="singer fistbumping crowd" />
+            <img src="assets/gallery/5.jpg" alt="man with a guitar singing" />
+            <img src="assets/gallery/6.jpg" alt="crowd looking at a lighted stage" />
+            <img src="assets/gallery/7.jpg" alt="woman singing on stage" />
+        </article>
+    </section>
     <footer id="footer" class="sec"></footer>
 
 </main>
