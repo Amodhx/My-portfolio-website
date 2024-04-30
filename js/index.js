@@ -52,6 +52,21 @@ srtop.reveal('#educationSection>div:first-child>input', {delay: 200});
 srtop.reveal('#educationSection>div:nth-child(2)', {delay: 200});
 
 
+srtop.reveal('#certificateSection>div', {delay: 200});
+
+
+srtop.reveal('#assignmentSection>div:first-child', {delay: 200});
+
+
+
+srtop.reveal('#assignmentSection>div:first-child', {delay: 200});
+
+srtop.reveal('#gallery', {delay: 200});
+
+
+
+
+
 srtop.reveal('#projectSection>div>div', {delay: 200});
 
 
@@ -175,6 +190,7 @@ $("#projectSection>div>div").on('mouseleave', () => {
 });
 
 
+// project section source code btn
 $("#projectSection>div>div:first-child>nav").on('mouseenter', () => {
     $("#projectSection>div>div:first-child>nav>div:first-child").addClass("showicon");
     $(" #projectSection>div>div:first-child>nav>div:nth-child(2)").addClass("hideText");
@@ -196,11 +212,11 @@ $("#projectSection>div>div>nav").on('mouseleave', () => {
     $(" #projectSection>div>div>nav>div:nth-child(2)").removeClass("hideText");
     $(" #projectSection>div>div>nav").removeClass("clr")
 })
-
+// project section source code btn end
 
 
 // download resume
-$("#resumeBtn").on('click',()=>{
+$("#resumeBtn").on('click', () => {
     const a = document.createElement('a')
     a.href = "assets/resume/Amodh Nanditha CV.pdf"
     a.download = "assets/resume/Amodh Nanditha CV.pdf".split('/').pop()
@@ -208,6 +224,8 @@ $("#resumeBtn").on('click',()=>{
     a.click()
     document.body.removeChild(a)
 });
+
+// download resume end
 
 
 // assignment description viewer
@@ -256,4 +274,21 @@ function textAppend(index) {
     $("#assignmentSection>div:nth-child(2)>div:first-child").addClass("showSQ");
 }
 
+// assignment description viewer end
 
+
+// project source code navigation
+
+$("#studentCode").on('click', () => {
+    window.open('https://github.com/Amodhx/Student_Management_System');
+});
+
+$("#libraryCode").on('click', () => {
+    window.open('https://github.com/Amodhx/Library-management-System');
+});
+
+$("#inventoryCode").on('click', () => {
+    window.open('https://github.com/Amodhx/Inventory-management-system');
+});
+
+// project source code navigation end
