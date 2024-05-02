@@ -272,6 +272,7 @@ let ar = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0];
 
 function textAppend(index) {
     $("#assignmentSection>div:nth-child(2)>div:first-child").addClass("showSQ");
+
 }
 
 // assignment description viewer end
