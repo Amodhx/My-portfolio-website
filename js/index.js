@@ -29,7 +29,7 @@ $("#burgerbtn").on('click', () => {
         num = 0;
     }
 
-})
+});
 
 const srtop = ScrollReveal({
     origin: 'top',
