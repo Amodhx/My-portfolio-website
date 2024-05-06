@@ -1,0 +1,118 @@
+
+#galleryArea{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#imagesController{
+    width: 90vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.container-general .gallery-wrap {
+    display: flex;
+    height: 70%;
+}
+.container-general .gallery-wrap .item {
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    transition: all ease-in .3s
+}
+
+.container-general .gallery-wrap .item:hover {
+    flex: 3;
+}
+
+@media all  and (max-width: 730px){
+    .container-general .gallery-wrap .item {
+        flex: 2;
+    }
+    .container-general .gallery-wrap{
+        height: 50%;
+    }
+    .container-general .gallery-wrap .item:hover {
+        flex: 8;
+    }
+}
+@media all  and (max-width: 650px){
+    .container-general .gallery-wrap .item {
+        flex: 5;
+    }
+    .container-general .gallery-wrap{
+        height: 50%;
+    }
+    .container-general .gallery-wrap .item:hover {
+        flex: 20;
+    }
+}
+@media all  and (max-width: 600px){
+    .container-general .gallery-wrap .item {
+        flex: 5;
+    }
+    .container-general .gallery-wrap{
+        height: 50%;
+    }
+    .container-general .gallery-wrap .item:hover {
+        flex: 20;
+    }
+    #imagesController>div:nth-child(7){
+        display: none;
+    }
+
+    }
+
+@media all  and (max-width: 480px){
+    .container-general .gallery-wrap .item {
+        flex: 7;
+    }
+    .container-general .gallery-wrap{
+        height: 50%;
+    }
+    .container-general .gallery-wrap .item:hover {
+        flex: 30;
+    }
+    #imagesController>div:nth-child(7){
+        display: none;
+    }
+    #imagesController>div:nth-child(6){
+        display: none;
+    }
+    #imagesController>div:nth-child(5){
+        display: none;
+    }
+
+}
+@media all  and (max-width: 321px){
+    .container-general .gallery-wrap .item {
+        flex: 7;
+    }
+    .container-general .gallery-wrap{
+        height: 50%;
+    }
+    .container-general .gallery-wrap .item:hover {
+        flex: 40;
+    }
+    #imagesController>div:nth-child(7){
+        display: none;
+    }
+    #imagesController>div:nth-child(6){
+        display: none;
+    }
+    #imagesController>div:nth-child(5){
+        display: none;
+    }
+    #gallerySection{
+        height: 80vh;
+    }
+
+}

@@ -19,9 +19,51 @@
 <link rel="stylesheet" href="css/projects.css">
 <link rel="stylesheet" href="css/assignments.css">
 <link rel="stylesheet" href="css/certificates.css">
+<link rel="stylesheet" href="css/gallery.css">
 <link rel="stylesheet" href="css/footer.css">
 <style>
-
+#imagesController>div:first-child{
+    background-image: url("assets/gallery/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#imagesController>div:nth-child(2){
+    background-image: url("assets/gallery/10.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#imagesController>div:nth-child(3){
+    background-image: url("assets/gallery/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#imagesController>div:nth-child(4){
+    background-image: url("assets/gallery/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#imagesController>div:nth-child(5){
+    background-image: url("assets/gallery/5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#imagesController>div:nth-child(6){
+    background-image: url("assets/gallery/8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#imagesController>div:nth-child(7){
+    background-image: url("assets/gallery/9.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 </style>
 <body>
 <!--nav bar-->
@@ -203,7 +245,21 @@
             </div>
         </div>
     </section>
-    <section id="gallerySection" class="sec"></section>
+    <section id="gallerySection" class="sec">
+           <div id="galleryArea">
+               <div class="container-general">
+                   <div id ="imagesController" class="gallery-wrap wrap-effect-1">
+                       <div class="item hidden"></div>
+                       <div class="item hidden"></div>
+                       <div class="item hidden"></div>
+                       <div class="item hidden"></div>
+                       <div class="item hidden"></div>
+                       <div class="item hidden"></div>
+                       <div class="item hidden"></div>
+                   </div>
+               </div>
+           </div>
+    </section>
     <footer id="footer" class="sec">
         <img src="assets/footerAdmin.png" alt="AdminImg" title="footerAdmin">
         <nav>
@@ -234,5 +290,8 @@
 <!--tilt-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/index.js"></script>
+<script>
+
+</script>
 </body>
 </html>

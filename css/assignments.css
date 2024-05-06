@@ -128,31 +128,24 @@
     }
 
     #assignmentSection{
-        height: 1050px;
+        height: 1111px;
     }
     #assignmentSection>div:nth-child(2)>div:nth-child(2){
         height: 90vh;
         grid-template-columns: repeat(2, 1fr);
         transform: translateY(-55%);
-        left: 9%;
-        top: -9vh;
+        left: 7%;
+        top: 6%;
 
     }
     #assignmentSection>div:nth-child(2){
-        height: 106vh;
+        height: 114vh;
     }
 
     #assignmentSection>div:nth-child(2)>div:first-child {
         height: 56vh;
     }
 
-
-}
-@media all and (max-width: 890px) {
-    #assignmentSection>div:nth-child(2)>div:nth-child(2){
-        left: 7%;
-
-    }
 
 }
 @media all and (max-width: 700px) {
@@ -211,14 +204,14 @@
 @media all and (max-width: 430px) {
     #assignmentSection>div:nth-child(2)>div:nth-child(2){
         left: 2%;
-        height: 70vh;
-        top: -26%;
+        height: 98vh;
+        top: -16%;
     }
     #assignmentSection>div:nth-child(2){
-        height: 70vh;
+        height: 76vh;
     }
     #assignmentSection{
-        height: 778px;
+        height: 730px;
     }
     #assignmentSection>div:first-child {
         height: 14vh;
@@ -244,9 +237,9 @@
         top: -47%;
     }
     #assignmentSection>div:nth-child(2){
-        height: 55vh;
+        height: 57vh;
     }
     #assignmentSection{
-        height: 660px;
+        height: 524px;
     }
 }
