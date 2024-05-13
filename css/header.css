@@ -37,6 +37,7 @@ header > nav > ul > li > a {
 header>div{
     position: relative;
     top: -11px;
+    width: 81px;
 }
 #burgerbtn{
     top: 18px;

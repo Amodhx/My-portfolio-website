@@ -417,3 +417,71 @@ $("#assignmentSection > nav > div:nth-child(12)>div:nth-child(2)>img:first-child
 });
 
 // assignment github linkadding end
+
+
+// header animation adding
+
+$("#homeheader").on('mouseenter',()=>{
+    $("#homeheader").addClass('animate__animated animate__jello animate__delay-0.5s');
+
+
+
+});
+$("#homeheader").on('mouseleave',()=> {
+    $("#homeheader").removeClass('animate__animated animate__jello animate__delay-0.5s');
+
+});
+
+
+$("#blogheader").on('mouseenter',()=>{
+    $("#blogheader").addClass('animate__animated animate__jello animate__delay-0.5s');
+
+
+
+});
+$("#blogheader").on('mouseleave',()=> {
+    $("#blogheader").removeClass('animate__animated animate__jello animate__delay-0.5s');
+
+});
+
+///////
+$("#educationheader").on('mouseenter',()=>{
+    $("#educationheader").addClass('animate__animated animate__jello animate__delay-0.5s');
+
+
+
+});
+$("#educationheader").on('mouseleave',()=> {
+    $("#educationheader").removeClass('animate__animated animate__jello animate__delay-0.5s');
+
+});
+$("#projectheader").on('mouseenter',()=>{
+    $("#projectheader").addClass('animate__animated animate__jello animate__delay-0.5s');
+
+
+
+});
+$("#projectheader").on('mouseleave',()=> {
+    $("#projectheader").removeClass('animate__animated animate__jello animate__delay-0.5s');
+
+});
+$("#assignmentheader").on('mouseenter',()=>{
+    $("#assignmentheader").addClass('animate__animated animate__jello animate__delay-0.5s');
+
+
+
+});
+$("#assignmentheader").on('mouseleave',()=> {
+    $("#assignmentheader").removeClass('animate__animated animate__jello animate__delay-0.5s');
+
+});
+$("#footerheader").on('mouseenter',()=>{
+    $("#footerheader").addClass('animate__animated animate__jello animate__delay-0.5s');
+
+
+
+});
+$("#footerheader").on('mouseleave',()=> {
+    $("#footerheader").removeClass('animate__animated animate__jello animate__delay-0.5s');
+
+});
