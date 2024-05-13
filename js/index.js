@@ -31,45 +31,6 @@ $("#burgerbtn").on('click', () => {
 
 });
 
-const srtop = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 1000,
-    reset: true
-});
-srtop.reveal('#homeSection > h3', {delay: 200});
-srtop.reveal('#homeSection>a', {delay: 200});
-srtop.reveal('#homeImage', {delay: 200});
-srtop.reveal('#socials', {delay: 200});
-
-srtop.reveal('#blogSection>div>h1', {delay: 200});
-srtop.reveal('#blogSection>div>p', {delay: 200});
-
-srtop.reveal('#educationSection>div:first-child>h1', {delay: 200});
-srtop.reveal('#educationSection>div:first-child>h3', {delay: 200});
-srtop.reveal('#educationSection>div:first-child>p', {delay: 200});
-srtop.reveal('#educationSection>div:first-child>input', {delay: 200});
-srtop.reveal('#educationSection>div:nth-child(2)', {delay: 200});
-
-
-srtop.reveal('#certificateSection>div', {delay: 200});
-
-
-srtop.reveal('#assignmentSection>div:first-child', {delay: 200});
-
-
-
-srtop.reveal('#assignmentSection>div:first-child', {delay: 200});
-
-srtop.reveal('#gallery', {delay: 200});
-
-
-
-
-
-srtop.reveal('#projectSection>div>div', {delay: 200});
-
-
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
@@ -228,56 +189,6 @@ $("#resumeBtn").on('click', () => {
 // download resume end
 
 
-// assignment description viewer
-
-$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img").on('click', () => {
-    textAppend(0);
-
-});
-
-$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>img").on('click', () => {
-    textAppend(1);
-
-});
-
-$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>img").on('click', () => {
-    textAppend(2);
-
-});
-$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>img").on('click', () => {
-    textAppend(3);
-
-});
-$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(5)>img").on('click', () => {
-    textAppend(4);
-
-});
-$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(6)>img").on('click', () => {
-    textAppend(5);
-
-});
-$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(7)>img").on('click', () => {
-    textAppend(6);
-
-});
-$("#assignmentSection>div:nth-child(2)>div:nth-child(2)>div:nth-child(8)>img").on('click', () => {
-    textAppend(7);
-});
-
-$("#assignmentSection>div:nth-child(2)>div:first-child>nav>img").on('click', () => {
-    $("#assignmentSection>div:nth-child(2)>div:first-child").removeClass("showSQ");
-})
-
-let ar = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0];
-
-function textAppend(index) {
-    $("#assignmentSection>div:nth-child(2)>div:first-child").addClass("showSQ");
-
-}
-
-// assignment description viewer end
-
-
 // project source code navigation
 
 $("#studentCode").on('click', () => {
@@ -293,3 +204,205 @@ $("#inventoryCode").on('click', () => {
 });
 
 // project source code navigation end
+
+
+// assignment div hover effect
+
+$("#assignmentSection > nav > div:first-child ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:first-child>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:first-child ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:first-child>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+$("#assignmentSection > nav > div:nth-child(2) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(2)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(2) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(2)>div:nth-child(2)").removeClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(3) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(3)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(3) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(3)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+
+$("#assignmentSection > nav > div:nth-child(4) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(4)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(4) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(4)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+
+$("#assignmentSection > nav > div:nth-child(5) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(5)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(5) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(5)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+
+$("#assignmentSection > nav > div:nth-child(6) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(6)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(6) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(6)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+
+$("#assignmentSection > nav > div:nth-child(7) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(7)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(7) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(7)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+
+$("#assignmentSection > nav > div:nth-child(8) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(8)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(8) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(8)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+
+$("#assignmentSection > nav > div:nth-child(9) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(9)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(9) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(9)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+
+$("#assignmentSection > nav > div:nth-child(10) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(10)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(10) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(10)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+$("#assignmentSection > nav > div:nth-child(11) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(11)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(11) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(11)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+$("#assignmentSection > nav > div:nth-child(12) ").on('mouseenter', () => {
+    $("#assignmentSection > nav > div:nth-child(12)>div:nth-child(2)").addClass('showintcir');
+
+})
+$("#assignmentSection > nav > div:nth-child(12) ").on('mouseleave', () => {
+    $("#assignmentSection > nav > div:nth-child(12)>div:nth-child(2)").removeClass('showintcir');
+
+})
+
+// assignment div hover effect end
+
+
+//assignment view in path
+
+
+$("#assignmentSection > nav > div:first-child>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+    window.open('https://www.figma.com/file/mYxFEvznCdgUVS8vJK3b7b/My-Profile?type=design&node-id=0%3A1&mode=design&t=WEK3weHBD13dOyRM-1');
+});
+$("#assignmentSection > nav > div:nth-child(2)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+    window.open('https://amodhx.github.io/My-portfolio-website/');
+});
+$("#assignmentSection > nav > div:nth-child(3)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+$("#assignmentSection > nav > div:nth-child(4)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+$("#assignmentSection > nav > div:nth-child(5)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+    window.open('https://amodhx.github.io/My-portfolio-website/');
+});
+$("#assignmentSection > nav > div:nth-child(6)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+$("#assignmentSection > nav > div:nth-child(7)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+$("#assignmentSection > nav > div:nth-child(8)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+$("#assignmentSection > nav > div:nth-child(9)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+$("#assignmentSection > nav > div:nth-child(10)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+$("#assignmentSection > nav > div:nth-child(11)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+$("#assignmentSection > nav > div:nth-child(12)>div:nth-child(2)>img:nth-child(2)").on('click', () => {
+
+});
+//assignment view in path end
+
+
+// assignment github linkadding
+$("#assignmentSection > nav > div:first-child>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/My-portfolio-website');
+});
+$("#assignmentSection > nav > div:nth-child(2)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/My-portfolio-website');
+});
+$("#assignmentSection > nav > div:nth-child(3)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/Assignment03-WEB');
+});
+$("#assignmentSection > nav > div:nth-child(4)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/IT-assignment04');
+});
+$("#assignmentSection > nav > div:nth-child(5)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/My-portfolio-website');
+});
+$("#assignmentSection > nav > div:nth-child(6)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/Inventory-management-system');
+});
+$("#assignmentSection > nav > div:nth-child(7)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/Inventory-management-system');
+});
+$("#assignmentSection > nav > div:nth-child(8)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/Assignment-08');
+});
+$("#assignmentSection > nav > div:nth-child(9)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/IT-assignment09');
+});
+$("#assignmentSection > nav > div:nth-child(10)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/Assignment-10');
+});
+$("#assignmentSection > nav > div:nth-child(11)>div:nth-child(2)>img:first-child").on('click', () => {
+    window.open('https://github.com/Amodhx/Inventory-management-system');
+});
+$("#assignmentSection > nav > div:nth-child(12)>div:nth-child(2)>img:first-child").on('click', () => {
+
+});
+
+// assignment github linkadding end

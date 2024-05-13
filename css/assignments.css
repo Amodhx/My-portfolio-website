@@ -1,245 +1,209 @@
-#assignmentSection{
-    height: 820px;
+#assignmentSection {
+    overflow: hidden;
+    height: 986px;
+    background-color: white;
 }
-#assignmentSection>div:first-child{
-    width: 100%;
-    height: 24vh;
-    background-color: rgba(25, 113, 141, 1);
-    backdrop-filter: grayscale(10%);
+
+#assignmentSection > nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    left: 3vw;
     position: relative;
-    top: 0;
+
 }
-#assignmentSection>div:first-child>h1{
+
+#assignmentSection > nav > div {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+#assignmentSection > nav > div>div:first-child{
+    background-color: #001940;
+    width: 100%;
+    aspect-ratio: 1/1;
+    z-index: 999;
+    position: relative;
+}
+
+#assignmentSection > nav > div>div:first-child>img{
     position: absolute;
-    top: 9vh;
-    text-align: center;
-    bottom: 0;
     left: 0;
     right: 0;
+    top: -145px;
+    bottom: 0;
     margin: auto;
-    color: white;
-    font-size: 46px;
-    font-family: monospace;
 }
-#assignmentSection>div:nth-child(2){
-    width: 100%;
+
+#assignmentSection > nav > div>div:nth-child(2){
     position: relative;
-    height: 80vh;
-    background: white;
-    overflow: hidden;
+    background-color: #001940;
+    width: 5px;
+    height: 5px;
+    top: -215px;
+    margin: auto;
+    transform: translateY(-200px);
+    z-index: 999;
+    transition-duration: 2s;
 }
-#assignmentSection>div:nth-child(2)>div:first-child{
-    color: gray;
-    width: 100%;
-    height: 80vh;
+
+#assignmentSection > nav > div>div:nth-child(2)>h1{
     position: relative;
-    transform: translateY(-100%);
-    z-index: 99999;
-    background-color: white;
-    border-bottom: 1px solid #001940;
-    transition-duration: 0.5s;
+    left: 168px;
+    font-family: cursive;
+    top: 30px;
+    color: #001940;
+
+    transition-duration: 2s;
 }
-#assignmentSection>div:nth-child(2)>div:nth-child(2){
+#assignmentSection > nav > div>div:nth-child(2)>img:first-child{
+    width: 35px;
     position: relative;
-    background: white;
-    width: 94%;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    z-index: 9999;
-    transform: translateY(-100%);
-    align-content: center;
-    left: 3%;
+    top: 170px;
+    left: 209px;
+    cursor: copy;
 
+    transition-duration: 2s;
 }
-.showSQ{
-    transform: translateY(0) !important;
-    transition-duration: 0.5s;
-}
-#assignmentSection>div:nth-child(2)>div:nth-child(2)>div{
-    width: 325px;
-    height: 210px;
-    margin: 9%;
-}
-#assignmentSection>div:nth-child(2)>div:nth-child(2)>div>img {
-    width: 325px;
-    height: 210px;
-}
-#assignmentSection>div:nth-child(2)>div:first-child>h1{
+#assignmentSection > nav > div>div:nth-child(2)>img:nth-child(2){
+    width: 37px;
     position: relative;
-    top: 9vh;
-    font-size: 38px;
-    left: 10vw;
+    top: 170px;
+    left: 262px;
+    transition-duration: 2s;
+
+    cursor: copy;
 }
-#assignmentSection>div:nth-child(2)>div:first-child>p{
-    width: 41%;
-    left: 8vw;
-    position: relative;
-    top: 11vh;
+
+.showintcir{
+    width: 550px !important;
+    height: 550px !important;
+    border-radius: 100% !important;
+    background-color: white !important;
+    transition-duration: 1s !important;
+    top: -250px;
+    left: -102px;
+
 }
-#assignmentSection>div:nth-child(2)>div:first-child>img{
-    width: 44%;
-    position: relative;
-    left: 52vw;
-    top: 5vh;
-}
-#assignmentSection>div:nth-child(2)>div:first-child>nav>img{
-    position: absolute;
-    left: 4vw;
-    top: 11px;
-    width: 52px;
-    cursor: pointer;
-}
-@media all and (max-width: 1420px) {
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div{
-        width: 300px;
-        height: 175px;
-        margin: 5%;
-    }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div>img {
-        width: 300px;
-        height: 175px;
+
+@media all and (max-width: 1240px) {
+    #assignmentSection > nav {
+        left: 2vw;
     }
 
 }
-@media all and (max-width: 1300px) {
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div{
-        width: 275px;
-        height: 150px;
-        margin: 5%;
-    }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div>img {
-        width: 275px;
-        height: 150px;
+
+@media all and (max-width: 1156px) {
+    #assignmentSection > nav {
+        left: 0.5vw;
     }
 
 }
-@media all and (max-width: 1200px){
-    #assignmentSection>div:nth-child(2)>div:nth-child(2){
-        height: 80vh;
-        grid-template-columns: repeat(3, 1fr);
 
+@media all and (max-width: 1076px) {
+    #assignmentSection > nav {
+        left: 0.2vw;
     }
 
 }
-@media all and (max-width: 890px){
-    #assignmentSection>div:nth-child(2)>div:first-child>img {
 
-    }
-
-    #assignmentSection{
-        height: 1111px;
-    }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2){
-        height: 90vh;
+@media all and (max-width: 1061px) {
+    #assignmentSection > nav {
         grid-template-columns: repeat(2, 1fr);
-        transform: translateY(-55%);
-        left: 7%;
-        top: 6%;
-
-    }
-    #assignmentSection>div:nth-child(2){
-        height: 114vh;
+        left: 8vw;
     }
 
-    #assignmentSection>div:nth-child(2)>div:first-child {
-        height: 56vh;
-    }
-
-
-}
-@media all and (max-width: 700px) {
-    #assignmentSection>div:nth-child(2)>div:nth-child(2){
-        left: 5%;
-    }
-    #assignmentSection>div:first-child>h1{
-        font-size: 295%;
+    #assignmentSection {
+        height: 1409px;
     }
 
 }
+
+@media all and (max-width: 951px) {
+    #assignmentSection > nav {
+        left: 6vw;
+    }
+
+}
+
+@media all and (max-width: 851px) {
+    #assignmentSection > nav {
+        left: 4vw;
+    }
+
+}
+
+@media all and (max-width: 781px) {
+    #assignmentSection > nav {
+        left: 2vw;
+    }
+
+}
+
+@media all and (max-width: 740px) {
+    #assignmentSection > nav {
+        left: 1vw;
+    }
+
+}
+
+@media all and (max-width: 719px) {
+    #assignmentSection > nav {
+        grid-template-columns: repeat(1, 1fr);
+        left: 25vw;
+    }
+    #assignmentSection {
+        height: 2700px;
+    }
+
+}
+
 @media all and (max-width: 651px) {
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div{
-        width: 32vw;
-        height: 12vh;
-        margin: 5%;
+    #assignmentSection > nav {
+        left: 22vw;
     }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div>img {
-        width: 32vw;
-        height: 12vh;
-    }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2){
-        left: 8%;
-        height: 70vh;
-        top: -18%;
-    }
-    #assignmentSection>div:nth-child(2){
-        height: 84vh;
-    }
-    #assignmentSection{
-        height: 900px;
-    }
-}
-@media all and (max-width: 550px) {
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div{
-        width: 177px;
-        height: 105px;
-        margin: 5%;
-    }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div>img {
-        width: 177px;
-        height: 105px;
-    }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2){
-        left: 8%;
-        height: 70vh;
-        top: -21%;
-    }
-    #assignmentSection>div:nth-child(2){
-        height: 84vh;
-    }
-    #assignmentSection{
-        height: 900px;
-    }
-}
-@media all and (max-width: 430px) {
-    #assignmentSection>div:nth-child(2)>div:nth-child(2){
-        left: 2%;
-        height: 98vh;
-        top: -16%;
-    }
-    #assignmentSection>div:nth-child(2){
-        height: 76vh;
-    }
-    #assignmentSection{
-        height: 730px;
-    }
-    #assignmentSection>div:first-child {
-        height: 14vh;
-    }
-    #assignmentSection>div:first-child>h1{
-        top: 4vh;
-    }
+
 }
 
+@media all and (max-width: 585px) {
+    #assignmentSection > nav {
+        left: 20vw;
+    }
 
-@media all and (max-width: 386px){
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div{
-        width: 135px;
-        height: 77px;
-    }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2)>div>img {
-        width: 135px;
-        height: 77px;
-    }
-    #assignmentSection>div:nth-child(2)>div:nth-child(2){
-        left: 4%;
-        height: 50vh;
-        top: -47%;
-    }
-    #assignmentSection>div:nth-child(2){
-        height: 57vh;
-    }
-    #assignmentSection{
-        height: 524px;
-    }
 }
+
+@media all and (max-width: 521px) {
+    #assignmentSection > nav {
+        left: 15vw;
+    }
+
+}
+
+@media all and (max-width: 465px) {
+    #assignmentSection > nav {
+        left: 11vw;
+    }
+
+}
+
+@media all and (max-width: 420px) {
+    #assignmentSection > nav {
+        left: 6vw;
+    }
+
+}
+
+@media all and (max-width: 383px) {
+    #assignmentSection > nav {
+        left: 1vw;
+    }
+
+    #assignmentSection > nav > div {
+        width: 97vw;
+        height: 26vh;
+    }
+
+
+}
+
