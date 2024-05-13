@@ -208,6 +208,15 @@ $("#inventoryCode").on('click', () => {
 
 // assignment div hover effect
 
+
+$("#assignmentSection>nav>div").on('mouseenter',()=>{
+    $("#assignmentSection > nav > div>div:nth-child(2)>h1").addClass('animate__animated animate__pulse animate__delay-0.5s')
+
+});
+$("#assignmentSection>nav>div").on('mouseleave',()=>{
+    $("#assignmentSection > nav > div>div:nth-child(2)>h1").removeClass('animate__animated animate__pulse animate__delay-1s')
+
+});
 $("#assignmentSection > nav > div:first-child ").on('mouseenter', () => {
     $("#assignmentSection > nav > div:first-child>div:nth-child(2)").addClass('showintcir');
 
@@ -215,10 +224,12 @@ $("#assignmentSection > nav > div:first-child ").on('mouseenter', () => {
 $("#assignmentSection > nav > div:first-child ").on('mouseleave', () => {
     $("#assignmentSection > nav > div:first-child>div:nth-child(2)").removeClass('showintcir');
 
+
 })
 
 $("#assignmentSection > nav > div:nth-child(2) ").on('mouseenter', () => {
     $("#assignmentSection > nav > div:nth-child(2)>div:nth-child(2)").addClass('showintcir');
+
 
 })
 $("#assignmentSection > nav > div:nth-child(2) ").on('mouseleave', () => {
